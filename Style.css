@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo & Nombre de la Empresa*/
+.header {
+  background: linear-gradient(rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.4)),
+    url(Img/peakpx.jpg);
+  background-position: 50% 80%; /* Ajustado para centrar la imagen */
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 460px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Distribuye el contenido entre izquierda y derecha */
+  align-items: center;
+  padding: 20px 50px; /* Añadido espacio alrededor del contenido */
+  position: relative;
+}
+
+.tm-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  z-index: 1000;
+}
+
+.tm-header-interior {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tm-sitio-logo {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tm-site-text-box {
+  display: inline-block;
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-top: 200px;
+}
+
+.tm-site-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.tm-site-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Nav */
+.tm-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinea el menú de navegación a la derecha */
+  margin-top: 200px;
+}
+
+.tm-nav-ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tm-nav-li {
+  list-style: none;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.tm-nav-link {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.tm-nav-link.active,
+.tm-nav-link:hover {
+  border-bottom: 1px solid white;
+}
+
+.tm-paging-links {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tm-paging-item {
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #f54800;
+  margin: 7px;
+}
+
+.tm-paging-link {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #f54800;
+  background-color: transparent;
+}
+
+.tm-paging-link.active,
+.tm-paging-link:hover {
+  background-color: #f54800;
+  color: #afafda;
+}
+
