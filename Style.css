@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo & Nombre de la Empresa*/
+.header {
+  background: linear-gradient(rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.4)),
+    url(Img/peakpx.jpg);
+  background-position: 50% 80%; /* Ajustado para centrar la imagen */
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 460px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Distribuye el contenido entre izquierda y derecha */
+  align-items: center;
+  padding: 20px 50px; /* Añadido espacio alrededor del contenido */
+  position: relative;
+}
+
+.tm-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  z-index: 1000;
+}
+
+.tm-header-interior {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tm-sitio-logo {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tm-site-text-box {
+  display: inline-block;
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-top: 200px;
+}
+
+.tm-site-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.tm-site-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* header Nav */
+.tm-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinea el menú de navegación a la derecha */
+  margin-top: 200px;
+}
+
+.tm-nav-ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tm-nav-li {
+  list-style: none;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.tm-nav-link {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.tm-nav-link.active,
+.tm-nav-link:hover {
+  border-bottom: 1px solid white;
+}
+
+/* Categoria */
+.tm-paging-links {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tm-paging-item {
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #f54800;
+  margin: 7px;
+}
+
+.tm-paging-link {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #f54800;
+  background-color: transparent;
+}
+
+.tm-paging-link.active,
+.tm-paging-link:hover {
+  background-color: #f54800;
+  color: #FFFFFF;
+}
+
+/* Productos */
+/* Caja amarilla centrada */
+/* Contenedor de productos con espacio entre ellos */
+.product-container {
+  display: flex;
+  flex-direction: column; /* Apila los productos verticalmente */
+  gap: 30px; /* Espacio entre los productos */
+  margin-top: 20px;
+}
+
+/* Estilos para las cajas de productos */
+.yellow-box {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px; /* Ancho fijo para todas las cajas */
+  height: 450px; /* Altura fija para todas las cajas */
+  margin: 0 auto;
+  box-shadow: 0px 4px 10px #191919;
+  overflow: hidden; /* Evita que el contenido desborde */
+}
+
+/* Imagen y contenido organizados en filas */
+.tm-description-figure {
+  flex-basis: 40%;
+  margin-right: 20px;
+}
+
+.tm-description-figure img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa todo el alto del contenedor */
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción y cubra el área */
+  border-radius: 10px; /* Mantén el borde redondeado si es necesario */
+}
+
+.tm-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 60%;
+}
+
+.tm-gallery-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tm-mb-45 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.tm-btn {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.tm-gallery-price {
+  font-size: 1.25rem;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+/* Footer */
+.tm-footer {
+  padding: 25px 15px;
+  margin-top: 40px;
+}
+
+.tm-footer a {
+  color: #626364;
+  text-decoration: none;
+}
+
+.tm-footer a:hover {
+  color: #1A6692;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Móvil (hasta 768px) */
+@media (max-width: 768px) {
+  .header {
+    min-height: 0vh;
+  }
+  .tm-header {
+    padding: 80px 30px 50px 30px;
+  }
+  .product-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .yellow-box {
+    width: 100%;
+    height: auto;
+  }
+  .tm-description-figure {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  .tm-content {
+    flex-basis: 100%;
+  }
+}
+
+/* Tableta (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    min-height: 0vh;
+  }
+  .tm-header {
+    padding: 80px 30px 50px 30px;
+  }
+  .product-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .yellow-box {
+    width: 48%;
+    height: auto;
+  }
+  .tm-description-figure {
+    flex-basis: 50%;
+    margin-right: 10px;
+  }
+  .tm-content {
+    flex-basis: 50%;
+  }
+}
+
+/* Escritorio (más de 1024px) */
+@media (min-width: 1025px) {
+  .header {
+    min-height: 460px;
+  }
+  .product-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .yellow-box {
+    width: 700px;
+    height: 450px;
+  }
+}
