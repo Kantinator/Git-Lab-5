@@ -1,0 +1,21 @@
+/*Contenedor del modelo de cajas*/
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    border-style: solid;
+    text-align: center;
+}
+
+/*Espacios vacios de la tabla periodica*/
+.vacio1{
+    grid-column-end: 18;
+}
+
+.vacio2{
+    grid-column-end: 13;
+}
+
+.vacio3{
+    grid-column-end: 13;
+}
